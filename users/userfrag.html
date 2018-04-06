@@ -1,5 +1,8 @@
-<div class ="table">
-<p ng-repeat="user in $ctrl.users">
-  {{user.name}} logged in:  {{user.loggedIn}}
-</p>
+<div class = "container">
+  <div class ="table yup card">
+      <p ng-repeat="user in $ctrl.users">
+          {{user.name}} logged in:  {{user.loggedIn}}
+      </p>
+      <p ng-model="$ctrl.users">{{$ctrl.random()}}</p>
+  </div>
 </div>
